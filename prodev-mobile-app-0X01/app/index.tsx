@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import styles from "Stylesheet";
+import { StyleSheet } from "react-native"
 
 export default function Index() {
   return (
@@ -8,15 +8,17 @@ export default function Index() {
         styles.container
       }
     >
-      <Text>"Entry Screen - Awesome"</Text>
+      <Text>Entry Screen - Awesome</Text>
+      <View>
       <Text style={styles.largeText}>Typescript is great if you practice more</Text>
-      <Text style={styles.mibasediumText}>React Native provides you a single codebase for cross platforms</Text>
-      <Text style={styles.smallText}>ALX is Awesome</Text>
+      <Text style={styles.mediumText}>React Native provides you a single codebase for cross platforms</Text>
+      <Text style={styles.smallText}>ALX is awesome</Text>
+      </View>
     </View>
   );
 }
 
-const styles= Stylesheet.create({
+const styles= StyleSheet.create({
   container:{
     backgroundColor: "#90caf9",
   },
@@ -29,14 +31,14 @@ const styles= Stylesheet.create({
   },
   mediumText:{
     fontSize: 20,
-    color: "#90caf9",
+    color: "#9c27b0",
     marginBottom: 10,
     fontWeight: "500",
     textAlign: "right",
   },
   smallText:{
     fontSize: 15,
-    color: "#2196F3",
+    color: "#2196f3",
     fontWeight: "400",
     textAlign: "center",
   },
